@@ -31,3 +31,78 @@ body {
 .wrapper:hover>.bayan-item>.bayan-btn>.bayan-btn__title::before {
   display: block;
 }
+
+.title {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.bayan-item {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.bayan-input {
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.bayan-btn {
+  display: block;
+  cursor: pointer;
+}
+
+.bayan-btn__title {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 3.5rem;
+  position: relative;
+  transition: all .5s;
+}
+
+.bayan-btn__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  width: 2rem;
+  height: .3rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  transition: all .2s;
+  display: none;
+
+}
+
+.bayan-btn__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  width: 2rem;
+  height: .3rem;
+  background-color: #fff;
+  transform: rotate(90deg);
+  border-radius: .2rem;
+  transition: all .2s;
+  display: none;
+
+}
+
+.bayan-input:checked+.bayan-btn>.bayan-btn__title::after {
+  transform: rotate(45deg);
+}
+
+.bayan-input:checked+.bayan-btn>.bayan-btn__title::before {
+  transform: rotate(-45deg);
+}
+
+.bayan-input:checked+.bayan-btn>.bayan-btn__title {
+  background-color: rebeccapurple;
+}
