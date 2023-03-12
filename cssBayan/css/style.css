@@ -106,3 +106,28 @@ body {
 .bayan-input:checked+.bayan-btn>.bayan-btn__title {
   background-color: rebeccapurple;
 }
+
+.bayan-img {
+  display: block;
+  max-height: 0;
+  transition: all 1s;
+  margin: 0 auto;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.bayan-input:checked+.bayan-btn .bayan-img {
+  max-height: 100vh;
+  transform: scaleY(0, 100%);
+  transition: all .5s;
+}
+
+.bayan-item:active {
+  opacity: 0.5;
+  color: #fff;
+}
+
+.bayan-item:hover>.bayan-btn>.bayan-img {
+  max-height: 100vh;
+  transform: scaleY(0, 100%);
+}
