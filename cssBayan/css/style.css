@@ -13,3 +13,21 @@ body {
 *::after {
   box-sizing: border-box;
 }
+/* ------------------------------ */
+
+.wrapper {
+  max-width: 120rem;
+  margin: 2rem auto;
+}
+
+.wrapper:hover {
+  color: #fff;
+}
+
+.wrapper:hover>.bayan-item>.bayan-btn>.bayan-btn__title::after {
+  display: block;
+}
+
+.wrapper:hover>.bayan-item>.bayan-btn>.bayan-btn__title::before {
+  display: block;
+}
