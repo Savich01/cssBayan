@@ -131,3 +131,21 @@ body {
   max-height: 100vh;
   transform: scaleY(0, 100%);
 }
+
+/* ------Adaptive------------ */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .bayan-img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 40%;
+  }
+}
